@@ -1,0 +1,19 @@
+{
+  "name": "mdn-report",
+  "version": "1.0.0",
+  "description": "This module generates Message Disposition Notification mail reports.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mat33470/mdn-report.git"
+  },
+  "author": "Mathieu Deschamps",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mat33470/mdn-report/issues"
+  },
+  "homepage": "https://github.com/mat33470/mdn-report#readme"
+}

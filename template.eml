@@ -1,0 +1,29 @@
+Date: ##DATE##
+From: ##FROM##
+Message-Id: <##MESSAGE_ID##>
+Subject: accusé de réception - (affiché)
+To: ##TO##
+MIME-Version: 1.0
+
+Content-Type: multipart/report; report-type=disposition-notification;
+    boundary="##BOUNDARY##"
+
+--##BOUNDARY##
+
+Le mail envoyé le ##DATE## à ##FROM## avec le sujet "##SUBJECT##" a été affiché.  Cela n'implique pas qu'il a été lu ou compris.
+
+--##BOUNDARY##
+content-type: message/disposition-notification
+
+Reporting-UA: ##DOMAIN_NAME##; Intramail 1.0.0
+Original-Recipient: rfc822;##FROM_ADDRESS##
+Final-Recipient: rfc822;##TO_ADDRESS##
+Original-Message-ID: <##ORIGINAL_MESSAGE_ID##>
+Disposition: manual-action/MDN-sent-manually; displayed
+
+--##BOUNDARY##
+content-type: message/rfc822
+
+##ORIGINAL_MESSAGE##
+
+--##BOUNDARY##--
