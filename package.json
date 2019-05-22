@@ -2,9 +2,9 @@
   "name": "mdn-report",
   "version": "1.0.0",
   "description": "This module generates Message Disposition Notification mail reports.",
-  "main": "index.js",
+  "main": "mdn-report.js",
   "scripts": {
-    "test": "node index.js"
+    "simple": "node tests/simple.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/mat33470/mdn-report/issues"
   },
-  "homepage": "https://github.com/mat33470/mdn-report#readme"
+  "homepage": "https://github.com/mat33470/mdn-report#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemailer": "^6.1.1"
+  }
 }
