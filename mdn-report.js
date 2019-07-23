@@ -91,7 +91,6 @@ const _mdnReport = (originalMessage, subject="Default", readableMessage="Default
     result += "Subject: " + subject + "\r\n";
     result += "To: " + originalMessage.notifTo + "\r\n";
     result += "MIME-Version: 1.0\r\n";
-    result += "\r\n";
     result += "Content-Type: multipart/report; report-type=disposition-notification; boundary=\"" + boundary + "\"\r\n";
     result += "\r\n";
     result += "--" + boundary + "\r\n";
@@ -100,7 +99,6 @@ const _mdnReport = (originalMessage, subject="Default", readableMessage="Default
     result += "\r\n\r\n";
     result += "--" + boundary + "\r\n";
     result += "content-type: message/disposition-notification\r\n";
-    result += "\r\n";
     result += "Final-Recipient: rfc822;" + recipientAddress + "\r\n";
     result += "Original-Message-ID: " + originalMessage.messageId + "\r\n";
     result += "Disposition: manual-action/MDN-sent-manually; displayed\r\n";
